@@ -1,0 +1,53 @@
+<% layout("/layouts/boilerplate") %>
+ <div class="row ">
+  <div class="col-8 offset-2">
+     <h3>Create your own listing</h3>    
+   <form method="post"  action="/listings" novalidate class="needs-validation">
+<div class="mb-3 ">
+  <label for="title" class="form-label">Title</label>
+   <input type="text" name="listing[title]" placeholder="add a catchy title" class="form-control" required>
+   <div class="invalid-feedback">Title should be short</div>
+   <div class="valid-feedback">Title looks good!</div>
+</div>
+
+     <div class="mb-3">
+  <label for="description" class="form-label">Description</label>
+    <textarea  required name="listing[description]" id="description" placeholder="write the description over here" class="form-control"></textarea>
+    <div class="invalid-feedback">Description should be short</div>
+   <div class="valid-feedback">Description looks good!</div> 
+   </div>
+  <div class="mb-3">
+  <label for="img" class="form-label">Image </label>
+    <input type="text" name="listing[image]" id="img" placeholder="image url/link" class="form-control">
+</div>
+
+ <div class="row">
+   <div class="mb-3 col-md-4">
+  <label for="price" class="form-label">Price</label>
+   <input type="number" id="price" name="listing[price]" placeholder="price" class="form-control" required>
+ <div class="invalid-feedback">Price should be valid</div>
+   <div class="valid-feedback">Price is valid</div> 
+</div>
+   
+
+   <div class="mb-3 col-md-8">
+  <label for="location" class="form-label">Location</label>
+ <input type="text" id="location" name="listing[location]"  class="form-control"placeholder="location"  required>
+<div class="invalid-feedback">Location should be valid </div>
+   <div class="valid-feedback"> Location is valid</div> 
+</div>
+
+ </div>
+
+    <div class="mb-3">
+  <label for="country" class="form-label">Country</label>
+  <input type="text" name="listing[country]" placeholder="country" class="form-control" required>
+<div class="invalid-feedback">Country should be valid </div>
+   <div class="valid-feedback"> Country is valid</div> 
+</div>
+ 
+   <button class="btn btn-dark add-btn ">Add</button>
+   </form>
+
+ </div>
+ </div>
