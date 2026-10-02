@@ -6,7 +6,7 @@ Wanderlust is a full-stack web application inspired by Airbnb that allows users 
 
 ## 📌 About the Project
 
-Wanderlust is my first complete full-stack development project. The application is being built to provide a platform where users can explore places to stay and manage property listings.
+Wanderlust is a full-stack development project. The application is being built to provide a platform where users can explore places to stay and manage property listings.
 
 The project is helping me gain hands-on experience with backend development, databases, RESTful routing, server-side rendering, authentication, and full-stack application development.
 
