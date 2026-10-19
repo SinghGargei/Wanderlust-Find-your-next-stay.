@@ -2,7 +2,7 @@
  <div class="row ">
   <div class="col-8 offset-2">
      <h3>Create your own listing</h3>    
-   <form method="post"  action="/listings" novalidate class="needs-validation">
+   <form method="post"  action="/listings" novalidate class="needs-validation" enctype="multipart/form-data">
 <div class="mb-3 ">
   <label for="title" class="form-label">Title</label>
    <input type="text" name="listing[title]" placeholder="add a catchy title" class="form-control" required>
@@ -17,9 +17,9 @@
    <div class="valid-feedback">Description looks good!</div> 
    </div>
   <div class="mb-3">
-  <label for="img" class="form-label">Image </label>
-    <input type="text" name="listing[image]" id="img" placeholder="image url/link" class="form-control">
-</div>
+    <label for="img" class="form-label">Image </label>
+    <input type="file" name="listing[image]" id="img" placeholder="image url/link" class="form-control">
+   </div>
 
  <div class="row">
    <div class="mb-3 col-md-4">
@@ -32,7 +32,7 @@
 
    <div class="mb-3 col-md-8">
   <label for="location" class="form-label">Location</label>
- <input type="text" id="location" name="listing[location]"  class="form-control"placeholder="location"  required>
+ <input type="text" id="location" name="listing[location]"  class="form-control" placeholder="location"  required>
 <div class="invalid-feedback">Location should be valid </div>
    <div class="valid-feedback"> Location is valid</div> 
 </div>
