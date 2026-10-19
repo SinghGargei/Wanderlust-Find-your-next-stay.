@@ -38,7 +38,7 @@ const dbUrl=process.env.ATLASDB_URL;
 const store = MongoStore.create({
 mongoUrl: dbUrl,
 crypto: {
-secret: "mysupersecretcode",
+secret:process.env.SECRET,
 },
 touchAfter: 24 * 3600,});
 
@@ -48,7 +48,7 @@ console. log("ERROR in MONGO SESSION STORE", err));
 //mongo-atlas
 const sessionOptions={
     store,
-   secret: 'keyboard cat',
+   secret: process.env.SECRET,
   resave: false,
   saveUninitialized: true,
   cookie:{
