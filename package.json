@@ -1,9 +1,8 @@
 {
-  {
-    "engines": {
-      "node":"24.20.0"
-    }
-  }
+  
+  "engines": {
+    "node": "24.20.0"
+  },
   "name": "majorproject",
   "version": "1.0.0",
   "description": "Wanderlust is a full-stack web application inspired by Airbnb that allows users to explore and manage accommodation listings.",
